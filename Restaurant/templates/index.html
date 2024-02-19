@@ -1,0 +1,113 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Home {% endblock %} {% block content %}
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+  <h1 class="display-4 fw-bold text-body-emphasis">
+    Embark on a Flavorful Journey
+  </h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+      Welcome to Familia, where every meal is a journey of flavors and a
+      celebration of togetherness. Nestled in the heart of Bangalore, our
+      restaurant is a cozy retreat where you can escape the hustle and bustle of
+      everyday life and indulge in the pleasures of good food and great company.
+    </p>
+  </div>
+  <div class="overflow-hidden" style="max-height: 70vh">
+    <div class="container px-5">
+      <img
+        src="{% static 'img/res.jpg' %}"
+        class="img-fluid border rounded-3 shadow-lg mb-4"
+        alt="Example image"
+        width="400"
+        height="200"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+  <h1 class="display-4 fw-bold text-body-emphasis">A Culinary Oasis</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+      Our menu is a testament to our passion for culinary excellence and our
+      commitment to serving dishes that are both delicious and comforting. From
+      hearty pasta dishes bursting with Italian flavors to fragrant curries that
+      transport you to the bustling streets of India, each bite is a reminder of
+      the power of food to evoke memories and create moments of joy.
+    </p>
+  </div>
+  <div class="overflow-hidden" style="max-height: 70vh">
+    <div class="container px-5">
+      <img
+        src="{% static 'img/sc.jpg' %}"
+        class="img-fluid border rounded-3 shadow-lg mb-4"
+        alt="Example image"
+        width="600"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="{% static 'img/ppl.jpg' %}"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        Where Memories Are Made
+      </h1>
+      <p class="lead">
+        Our menu is a testament to our passion for culinary excellence and our
+        commitment to serving dishes that are both delicious and comforting.
+        From hearty pasta dishes bursting with Italian flavors to fragrant
+        curries that transport you to the bustling streets of India, each bite
+        is a reminder of the power of food to evoke memories and create moments
+        of joy.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="px-4 pt-5 my-5 text-center border-bottom" style="min-height: 50vh">
+  <h1 class="display-4 fw-bold text-body-emphasis">
+    Your Culinary Adventure Awaits
+  </h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+      Join us at Familia and let us take you on a culinary adventure that will
+      tantalize your taste buds and leave you craving more. From our family to
+      yours, welcome home.
+    </p>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <a href="{% url 'book' %}"
+      ><button
+        type="button"
+        class="btn btn-primary btn-lg px-4 me-md-2"
+        style="background-color: #f6b17a; color: black; border: 0"
+      >
+        Book Now
+      </button></a
+    >
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}{% load static %} {% block title %} Book {% endblock %} {% block content %}
+<div class="form-signin w-100 m-auto">
+  <form action="" method="post">
+    {% comment %}
+    <h1 class="h3 mb-3 fw-normal">Make your Reservation</h1>
+    {% endcomment %}
+    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+      Make your Reservation
+    </h1>
+    <div class="form-floating mt-2">
+      {% csrf_token %}
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="name@example.com"
+        required
+      /><label for="email">Email address</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input
+        name="name"
+        type="text"
+        class="form-control"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+      <label for="name">Name</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input
+        name="phone"
+        type="text"
+        class="form-control"
+        id="phone"
+        placeholder="phone"
+        required
+      />
+      <label for="phone">Phone number</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input
+        name="guests"
+        type="number"
+        class="form-control"
+        id="guests"
+        placeholder="Number of guests"
+        required
+      />
+      <label for="guests">Number of guests</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input
+        name="requests"
+        type="text"
+        class="form-control"
+        id="requests"
+        placeholder="Additional requests"
+        required
+      />
+      <label for="requests">Additional requests</label>
+    </div>
+
+    <button
+      class="btn btn-primary w-100 py-2 mt-5"
+      style="background-color: #f6b17a; color: black; border: 0"
+      type="submit"
+    >
+      Book
+    </button>
+  </form>
+</div>
+
+{% endblock %}
